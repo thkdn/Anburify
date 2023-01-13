@@ -1,0 +1,40 @@
+body {
+  font-family: 'Noto Sans Old Permic', sans-serif;
+  background-color: #000000;
+  color: white;
+}
+hr.solid {
+  border-top: 1px solid #bbb;
+  width: 25%;
+}
+h1, h3 {
+  margin-top: 0;
+  text-align: center;
+}
+#latin-text, button {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+#cyrillic-text {
+  display: block;
+  text-align: center;
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-top: 1%;
+  font-size: 1.5em;
+  letter-spacing: .2rem;
+}
+#kaheksakand {
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-size: 5em;
+}
+#subtitle, a:link {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9em;
+  color: #FFFFFF;
+}
+
