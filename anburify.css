@@ -38,3 +38,9 @@ h1, h3 {
   color: #FFFFFF;
 }
 
+/* align radio buttons horizontally */
+.center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}

@@ -1,5 +1,6 @@
 function convert() {
   var latinText = document.getElementById("latin-text").value;
+  var language = document.querySelector('input[name="language"]:checked').value;
   var cyrillicText = "";
   
   for (var i = 0; i < latinText.length; i++) {
@@ -65,7 +66,15 @@ function convert() {
         cyrillicText += '𐍣';
         break;
       case 'w':
-        cyrillicText += '𐍣';
+        if (language == "estonian") {
+          cyrillicText += '𐍮';
+        }
+        else if (language == "finnish") {
+          cyrillicText += '𐍮';
+        }
+        else if (language == "english") {
+          cyrillicText += '𐍣';
+        }
         break;
       case 'c':
         cyrillicText += '𐍤';

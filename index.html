@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Latin to Cyrillic Converter</title>
+  <title>Latin to Anbur Converter</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Old+Permic&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="anburify.css">
   <style>
@@ -11,7 +11,7 @@
 </head>
 <body>
   <p id="kaheksakand">𐍐</p>
-  <h1>Latin to Cyrillic Converter</h1>
+  <h1>Latin to Anbur Converter</h1>
   <p id="subtitle">Put together using ChatGPT and a modest amount of manual tinkering by <a href="https://twitter.com/usutav">Tähekäde</a><br>thkdn@protonmail.com</p>
   <div align="center">
     <nav>
@@ -23,7 +23,15 @@
   </div><br>
   <h3>Enter Latin input into this box</h3>
   <textarea rows="10" cols="50" id="latin-text"></textarea><br>
-  <button onclick="convert()">Convert to Cyrillic1</button><br>
+  <div class="center">
+    <form>
+      <label><input type="radio" name="language" value="estonian" class="language-radio" checked> Estonian</label>
+      <label><input type="radio" name="language" value="finnish" class="language-radio"> Finnish</label>
+      <label><input type="radio" name="language" value="english" class="language-radio"> English</label>
+    </form>
+  </div>
+  <br>
+  <button onclick="convert()">Anburify</button><br>
   <h3>Here is your output in Anbur:<h3>
   <p id="cyrillic-text"></p>
 </body>
